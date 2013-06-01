@@ -14,22 +14,9 @@
 /log/*.log
 /tmp
 
-.DS_Store
 config/dblogin.yml
 /.env
 
-config/initializers/searchify.rb
 doc/search_stats.csv
 coverage/
 .sass-cache/
-
-# Ignore files created by RubyMine IDE (CCHNL Specific)
-/.idea
-.rvmrc
-
-
-*tags
-tags
-
-config/database.yml
-latest.dump
