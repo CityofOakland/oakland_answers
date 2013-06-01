@@ -14,9 +14,7 @@
 /log/*.log
 /tmp
 
-config/dblogin.yml
-/.env
-
-doc/search_stats.csv
 coverage/
 .sass-cache/
+
+config/database.yml
