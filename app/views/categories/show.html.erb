@@ -11,7 +11,7 @@
         <div class="header">
           <h1><%= @category.name %></h1>
         </div>
-        <% if @category.description.strip != "" %>
+        <% if @category.description && @category.description.strip != "" %>
           <p><%= @category.description %></p>
           <br/>
         <% end %>
