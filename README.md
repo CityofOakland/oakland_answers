@@ -16,7 +16,7 @@ Oakland Answers is based on [Honolulu Answers](http://answers.honolulu.gov): a n
 #### Instructions
 1. `git clone` the repo
 2. Configure environment variables as specified in `.env.example`
-3. Configure
+3. Create a `config/database.yml` configuration file. An example is provided for you at `config/database.yml.example`
 4. `rake db:setup` and follow the prompts to create your first user
 5. Launch with your choice of web server
 
