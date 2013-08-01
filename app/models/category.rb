@@ -8,7 +8,7 @@ class Category < ActiveRecord::Base
   friendly_id :name, use: [:slugged, :history]
 
   default_scope order('name ASC')
-  scope :by_access_count, order('access_count DESC')
+  scope :by_access_count, reorder('access_count DESC')
 
   private
 
@@ -18,6 +18,10 @@ class Category < ActiveRecord::Base
 
   def set_access_count_if_nil
     self.access_count = 0 if self.access_count.nil?
+  end                                        
+  
+  def articles_by_access_count
+    articles.by_access_count
   end
 
 end

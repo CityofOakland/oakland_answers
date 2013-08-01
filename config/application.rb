@@ -9,6 +9,8 @@ if defined?(Bundler)
   Bundler.require(:default, :assets, Rails.env)
 end
 
+#ENV['SEARCHIFY_API_INDEX'] = 'joel_index'
+
 module Honoluluanswers
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

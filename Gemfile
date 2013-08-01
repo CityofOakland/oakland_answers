@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ## Essentials
 ruby '1.9.3'                              # Ruby!
 gem 'rails', '3.2.13'                     # Rails!
-gem 'pg'                                  # PostgreSQL, the database server
+#gem 'pg'                                  # PostgreSQL, the database server
 gem 'thin'                                # Web server
 gem 'foreman'                             # For launching with the Procfile and keeping track of environment variables from .env
 
@@ -75,7 +75,7 @@ group :test, :development do
   gem 'factory_girl_rails'                # Create factories to test against
   gem 'spork-rails'                       # Speeds up TDD by launching multiple Rails instances in the background
   gem 'guard-spork'                       # Make guard aware of Spork - automatically restart spork if a change requires a rails restart   
-  gem 'capybara-webkit'                   # JS driver for Capybara (headless)
+  #gem 'capybara-webkit'                   # JS driver for Capybara (headless)
   gem 'memcached'                         # Local memcache
   gem 'sextant'                           # visit /rails/routes in the browser for nicer 'rake routes'
 end
